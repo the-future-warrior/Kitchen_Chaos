@@ -123,6 +123,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &38934018 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5552371412872571412, guid: 40355d03f0dc35846ada3b2a3cf9af58,
+    type: 3}
+  m_PrefabInstance: {fileID: 151004004}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb34570f1a3c648b3275aaf0194ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &151004004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132,10 +144,26 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5552371412872571412, guid: 40355d03f0dc35846ada3b2a3cf9af58,
         type: 3}
+      propertyPath: testing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552371412872571412, guid: 40355d03f0dc35846ada3b2a3cf9af58,
+        type: 3}
       propertyPath: tomatoPrefab
       value: 
       objectReference: {fileID: 3922408410475538817, guid: 0ef3a4f1543b66443944ee3cc061b57e,
         type: 3}
+    - target: {fileID: 5552371412872571412, guid: 40355d03f0dc35846ada3b2a3cf9af58,
+        type: 3}
+      propertyPath: kitchenObjectSO
+      value: 
+      objectReference: {fileID: 11400000, guid: beade24e5a2f95546912b8a2e35e9232,
+        type: 2}
+    - target: {fileID: 5552371412872571412, guid: 40355d03f0dc35846ada3b2a3cf9af58,
+        type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 1078979296}
     - target: {fileID: 6750671236955385084, guid: 40355d03f0dc35846ada3b2a3cf9af58,
         type: 3}
       propertyPath: m_RootOrder
@@ -710,6 +738,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1078979296 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5552371412872571412, guid: 40355d03f0dc35846ada3b2a3cf9af58,
+    type: 3}
+  m_PrefabInstance: {fileID: 6750671236791946934}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb34570f1a3c648b3275aaf0194ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1617104792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -974,6 +1014,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5552371412872571412, guid: 40355d03f0dc35846ada3b2a3cf9af58,
+        type: 3}
+      propertyPath: testing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552371412872571412, guid: 40355d03f0dc35846ada3b2a3cf9af58,
+        type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 38934018}
     - target: {fileID: 6750671236955385084, guid: 40355d03f0dc35846ada3b2a3cf9af58,
         type: 3}
       propertyPath: m_RootOrder
