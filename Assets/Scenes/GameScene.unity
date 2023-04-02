@@ -130,6 +130,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5552371412872571412, guid: 40355d03f0dc35846ada3b2a3cf9af58,
+        type: 3}
+      propertyPath: tomatoPrefab
+      value: 
+      objectReference: {fileID: 3922408410475538817, guid: 0ef3a4f1543b66443944ee3cc061b57e,
+        type: 3}
     - target: {fileID: 6750671236955385084, guid: 40355d03f0dc35846ada3b2a3cf9af58,
         type: 3}
       propertyPath: m_RootOrder
