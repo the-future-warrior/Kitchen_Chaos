@@ -101,14 +101,12 @@ public class Player : MonoBehaviour, IKitchenObjectParent {
                 // has ClearCounter Script
                 if(baseCounter != selectedCounter) {
                     SetSelectedCounter(baseCounter);
-                    Debug.Log(baseCounter.name);
                 }
             } else {
                 SetSelectedCounter(null);
             }
         } else {
             SetSelectedCounter(null);
-            Debug.Log("-");
         }
     }
 
