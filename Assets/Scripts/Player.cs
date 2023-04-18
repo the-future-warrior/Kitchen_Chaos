@@ -36,6 +36,10 @@ public class Player : NetworkBehaviour, IKitchenObjectParent {
     }
 
     void Update() {
+        if(!IsOwner) {
+            return;
+        }
+        
         HandleMovement();
         HandleInteractions();
     }
