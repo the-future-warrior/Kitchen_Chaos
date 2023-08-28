@@ -43,7 +43,7 @@ public class KitchenGameLobby : MonoBehaviour {
 
     private void Update() {
         HandleHeartBeat();
-        HandlePeriodicListLobbies();
+        //HandlePeriodicListLobbies();
     }
 
     private void HandleHeartBeat() {
@@ -73,7 +73,7 @@ public class KitchenGameLobby : MonoBehaviour {
         }
     }
 
-    private bool IsLobbyHost() {
+    public bool IsLobbyHost() {
         return joinedLobby != null && joinedLobby.HostId == AuthenticationService.Instance.PlayerId;
     }
 

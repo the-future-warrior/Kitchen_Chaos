@@ -10,6 +10,7 @@ public class CharacterSelectReady : NetworkBehaviour {
     public event EventHandler OnReadyChanged;
 
     private Dictionary<ulong, bool> playerReadyDictionary;
+    private float gameDurationInSeconds;
 
     private void Awake() {
         Instance = this;
@@ -37,6 +38,7 @@ public class CharacterSelectReady : NetworkBehaviour {
         }
 
         if(allClientsReady) {
+            KitchenGameMultiplayer.Instance.SetGameDurationInSeconds(gameDurationInSeconds);
             KitchenGameLobby.Instance.DeleteLobby();
 
             Loader.LoadNetwork(Loader.Scene.GameScene);
@@ -52,5 +54,9 @@ public class CharacterSelectReady : NetworkBehaviour {
 
     public bool IsPlayerReady(ulong clientId) {
         return playerReadyDictionary.ContainsKey(clientId) && playerReadyDictionary[clientId];
+    }    
+
+    public void SetGameDurationInSeconds(float gameDurationInSeconds) {
+        this.gameDurationInSeconds = gameDurationInSeconds;
     }
 }

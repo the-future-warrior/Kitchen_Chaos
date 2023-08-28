@@ -39,6 +39,7 @@ public class KitchenGameManager : NetworkBehaviour {
         Instance = this;
         playerReadyDictionary = new Dictionary<ulong, bool>();
         playerPauseDictionary = new Dictionary<ulong, bool>();
+        gamePlayingTimerMax = KitchenGameMultiplayer.Instance.GetGameDurationInSeconds();
     }
 
     private void Start() {

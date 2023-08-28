@@ -20,6 +20,8 @@ public class KitchenGameMultiplayer : NetworkBehaviour {
     [SerializeField] private List<Color> playerColorList;
 
     private NetworkList<PlayerData> playerDataNetworkList;
+    private NetworkVariable<float> gameDurationInSeconds = new NetworkVariable<float>(300f);
+    
     private string playerName;
 
     private void Awake() {
@@ -259,5 +261,13 @@ public class KitchenGameMultiplayer : NetworkBehaviour {
     public void SetPlayerName(string playerName) {
         this.playerName = playerName;
         PlayerPrefs.SetString(PLAYER_PREFS_PLAYER_NAME_MULTIPLAYER, playerName);
+    }
+
+    public void SetGameDurationInSeconds(float gameDurationInSeconds) {
+        this.gameDurationInSeconds.Value = gameDurationInSeconds;
+    }
+
+    public float GetGameDurationInSeconds() {
+        return this.gameDurationInSeconds.Value;
     }
 }
